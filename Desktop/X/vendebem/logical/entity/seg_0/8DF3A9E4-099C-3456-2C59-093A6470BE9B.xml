@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8DF3A9E4-099C-3456-2C59-093A6470BE9B" name="T_VB_FUNCIONARIO">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2023-03-07 01:58:11 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FUNCIONARIO" id="FA524923-9358-7337-BFF0-5C465C66BC15">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:36:41 UTC</createdTime>
+<comment><![CDATA[Esse atributo, demonstra o ID de um funcionário, é também uma chave primária.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo, demonstra o ID de um funcionário, é também uma chave primária.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FL_FUNCIONARIO" id="C335AA3B-5AE3-7F53-3982-8A40AE5E23F4">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:37:24 UTC</createdTime>
+<comment><![CDATA[Esse atributo, demonstra a filial do funcionário, poderá ser mais de uma, então é uma chave multivalorada.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo, demonstra a filial do funcionário, poderá ser mais de uma, então é uma chave multivalorada.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SL_FUNCIONARIO" id="661FF19A-62BD-B350-AAB7-23A881E0097F">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:38:18 UTC</createdTime>
+<comment><![CDATA[Esse atributo, demonstra qual o salário de um funcionário.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo, demonstra qual o salário de um funcionário.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_FUNCIONARIO" id="D90C9778-54BA-8A39-0C87-C6B2C8D05E75">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:38:42 UTC</createdTime>
+<comment><![CDATA[Esse se refere ao nome do funcionário.]]></comment>
+<commentInRDBMS><![CDATA[Esse se refere ao nome do funcionário.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="723887BC-DD2A-F216-9535-E2D17B3C6387" name="T_VB_FUNCIONARIO PK">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:36:58 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA524923-9358-7337-BFF0-5C465C66BC15</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

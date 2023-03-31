@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86044F27-57D1-D50E-CC27-0A752CA380DF" name="T_VB_CLIENTE">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2023-03-07 01:56:54 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CLIENTE" id="80F98029-6290-1A99-9C1D-A504055B4F35">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-14 01:51:07 UTC</createdTime>
+<comment><![CDATA[colocar para tirar 10.]]></comment>
+<commentInRDBMS><![CDATA[colocar para tirar 10.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CLIENTE" id="C2250E65-3E3C-A224-AC71-742C147658F6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-14 01:57:17 UTC</createdTime>
+<comment><![CDATA[Esse atributo refere-se ao nome do cliente da looja Vendebem. seu conteúdo é opcional e monovalorado.
+
+]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo refere-se ao nome do cliente da looja Vendebem. seu conteúdo é opcional e monovalorado.
+
+]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_NASCIMENTO" id="23825A1E-B058-9895-D351-C7B7AA78DFAF">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-14 01:59:39 UTC</createdTime>
+<comment><![CDATA[Esse se refere a data de nascimento do cliente.]]></comment>
+<commentInRDBMS><![CDATA[Esse se refere a data de nascimento do cliente.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TELEFONE" id="97640A30-D32C-C936-316B-209E5A238DDE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-14 01:59:59 UTC</createdTime>
+<comment><![CDATA[Esse se refere ao telefone  do cliente.]]></comment>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D52E7DF7-84BC-7197-1FA9-724BDCE7C315" name="T_VB_CLIENTE PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-14 01:51:43 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>80F98029-6290-1A99-9C1D-A504055B4F35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

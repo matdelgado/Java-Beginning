@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97FBC023-DE42-92BC-C832-940088202CDB" name="T_VB_PRODUTO">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2023-03-07 01:58:22 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DS_PRODUTO" id="8D456AB1-C65F-1C46-4467-6D74B2879180">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:49:00 UTC</createdTime>
+<comment><![CDATA[Se refere a descrição do produto.]]></comment>
+<commentInRDBMS><![CDATA[Se refere a descrição do produto.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PRODUTO" id="2EC71C8D-743B-EB78-A45D-59E66ED6038E">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:49:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo, se refere ao código do produto, é chave primária.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PR_PRODUTO" id="7EAE4A0A-C3D2-4186-AD0E-FA11A4D32259">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:50:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo, se refere ao preço do produto.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_PRODUTO" id="71DCFD00-14CF-8EFE-33B4-ABB02C035699">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:50:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo, se refere a quantidade consumida do produto.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_PAGAMENTO" id="FAB7B8E2-162F-2FF8-E41B-3127FA0E09F2">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:50:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse atributo, se refere ao valor total do produto consumido.]]></commentInRDBMS>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DA11A213-288A-7F84-3E24-9AA721040643" name="T_VB_PRODUTO PK">
+<createdBy>matde</createdBy>
+<createdTime>2023-03-20 01:49:44 UTC</createdTime>
+<ownerDesignName>vendebem</ownerDesignName>
+<engineerTo>
+<item key="D455C03D-D3E2-1458-785B-5E691652D645" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2EC71C8D-743B-EB78-A45D-59E66ED6038E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
