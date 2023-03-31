@@ -14,7 +14,7 @@ public class Jogador {
 	}
 	
 	public Jogador(String nome) {
-		System.out.println("Criando jogador chamado " + nome);
+		System.out.println("Criando jogador chamados " + nome);
 	}
 	public int getXp() {
 		return xp;
