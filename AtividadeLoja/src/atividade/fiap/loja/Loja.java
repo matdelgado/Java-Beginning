@@ -14,6 +14,13 @@ public class Loja extends Object {
 		this.quantidade = quantidade;
 	}
 	
+	public boolean nivelEstoque() {
+		if (this.quantidade <= 5) {
+			return true;
+		}
+		return false;
+	}
+	
 	public String tipoProduto() {
 		return this.tipo;
 	}
@@ -28,13 +35,6 @@ public class Loja extends Object {
 	
 	public int quantidadeProduto() {
 		return this.quantidade;
-	}
-	
-	public boolean nivelEstoque() {
-		if (this.quantidade <= 5) {
-			return true;
-		}
-		return false;
 	}
 	
 }

@@ -9,13 +9,13 @@ public class Livro extends Loja{
 		this.autor = autor;
 	}
 	
-	public String autorLivro() {
-		return this.autor;
-	}
-	
 	public String dadosProduto() {
 		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + autorLivro();
 		
 	}
 
+	public String autorLivro() {
+		return this.autor;
+	}
+	
 }

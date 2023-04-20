@@ -10,14 +10,6 @@ public class Vestuario extends Loja{
 		this.cor = cor;
 		this.tamanho = tamanho;
 	}
-	
-	public String corVestuario() {
-		return this.cor;
-	}
-	
-	public String tamanhoVestuario() {
-		return this.tamanho;
-	}
 		
 	public String dadosProduto() {
 		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + corVestuario() + " " + tamanhoVestuario();
@@ -31,5 +23,12 @@ public class Vestuario extends Loja{
 		return 0;
 	
 }
+	public String corVestuario() {
+		return this.cor;
+	}
+	
+	public String tamanhoVestuario() {
+		return this.tamanho;
+	}
 
 }

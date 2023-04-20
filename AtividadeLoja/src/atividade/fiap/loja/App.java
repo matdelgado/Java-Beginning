@@ -12,7 +12,7 @@ public class App {
 		Eletronico eletronico2 = new Eletronico("Televisao 1", 150.00, "Televisão", 1, "LG", "128gb");
 		Eletronico eletronico3 = new Eletronico("Celular do Matheus", 250.00, "Celular", 1, "Apple", "Iphone 15");
 		
-		
+		System.out.println("é doido mesmo!!!!");
 		
 	}
 

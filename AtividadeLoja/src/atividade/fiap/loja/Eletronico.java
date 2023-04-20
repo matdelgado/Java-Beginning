@@ -11,6 +11,11 @@ public class Eletronico extends Loja {
 		this.modelo = modelo;
 	}
 		
+	public String dadosProduto() {
+		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + marcaEletronico() + " " + modeloEletronico();
+			
+	}
+	
 	public String marcaEletronico() {
 		return this.marca;
 	}
@@ -18,12 +23,6 @@ public class Eletronico extends Loja {
 	public String modeloEletronico() {
 		return this.modelo;
 	}
-		
-	public String dadosProduto() {
-		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + marcaEletronico() + " " + modeloEletronico();
-			
-	}
-		
 
 }
 
