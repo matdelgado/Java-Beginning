@@ -4,31 +4,27 @@ public class Vestuario extends Loja{
 	
 	private String cor;
 	private String tamanho;
+	private String meuTipo = "Vestuario";
 	
-	public Vestuario(String produto, Double preco, String tipo, int quantidade, String autor) {
-		super(produto, preco, tipo, quantidade);
+	public Vestuario(String produto, Double preco, int quantidade, String autor, String cor, String tamanho) {
+		super(produto, preco, quantidade);
+		setTipo(meuTipo);
 		this.cor = cor;
 		this.tamanho = tamanho;
 	}
+	
 		
-	public String dadosProduto() {
-		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + corVestuario() + " " + tamanhoVestuario();
-		
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.cor + this.tamanho;
 	}
 	
-	public double descontoVestuario() {
-		if (nivelEstoque()) {
-			return (precoProduto() - (precoProduto() * 0.20));
+	@Override
+	public double getPrecoMinimo() {
+		if ((nivelEstoque())) {
+			return super.getPrecoMinimo()*0.7;		
 	}
-		return 0;
-	
+		return super.getPrecoMinimo();
 }
-	public String corVestuario() {
-		return this.cor;
-	}
-	
-	public String tamanhoVestuario() {
-		return this.tamanho;
-	}
 
 }

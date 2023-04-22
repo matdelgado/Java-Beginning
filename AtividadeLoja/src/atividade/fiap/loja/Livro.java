@@ -3,19 +3,22 @@ package atividade.fiap.loja;
 public class Livro extends Loja{
 	
 	private String autor;
+	private String meuTipo = "Livro";
 	
-	public Livro(String produto, Double preco, String tipo, int quantidade, String autor) {
-		super(produto, preco, tipo, quantidade);
+	public Livro(String produto, double preco, int quantidade, String autor) {
+		super(produto, preco, quantidade);
+		setTipo(autor);
 		this.autor = autor;
 	}
 	
-	public String dadosProduto() {
-		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + autorLivro();
-		
+	@Override
+	public String toString() {
+		return super.toString() + " - " + this.autor;
 	}
-
-	public String autorLivro() {
-		return this.autor;
+	
+	@Override
+	public double getPrecoMinimo() {
+		return super.getPrecoMinimo() * 0.8;
 	}
 	
 }

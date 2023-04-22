@@ -4,26 +4,27 @@ public class Eletronico extends Loja {
 		
 	private String marca;
 	private String modelo;
+	private String meuTipo = "Eletrônico";
 		
-	public Eletronico(String produto, Double preco, String tipo, int quantidade, String marca, String modelo) {
-		super(produto, preco, tipo, quantidade);
+	public Eletronico(String produto, Double preco, int quantidade, String marca, String modelo) {
+		super(produto, preco, quantidade);
+		setTipo(meuTipo);
 		this.marca = marca;
 		this.modelo = modelo;
 	}
-		
-	public String dadosProduto() {
-		return tipoProduto() + " " + precoProduto() + " " + produtoProduto() + " " + quantidadeProduto() + " " + marcaEletronico() + " " + modeloEletronico();
-			
+	
+	@Override
+	public String toString () {
+		return super.toString() + " - " + this.marca + this.modelo;
 	}
 	
-	public String marcaEletronico() {
-		return this.marca;
+	@Override
+	public double getPrecoMinimo() {
+		if(marca.equalsIgnoreCase("Apple")) 
+			return super.getPrecoMinimo();
+		return super.getPrecoMinimo() * 0.9;
 	}
 	
-	public String modeloEletronico() {
-		return this.modelo;
-	}
-
 }
 
 	

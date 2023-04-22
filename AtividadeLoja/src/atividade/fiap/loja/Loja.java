@@ -7,34 +7,39 @@ public class Loja extends Object {
 	private String tipo;
 	private int quantidade;
 	
-	public Loja(String produto, Double preco, String tipo, int quantidade) {
+	public Loja(String produto, Double preco, int quantidade) {
 		this.produto = produto;
 		this.preco = preco;
-		this.tipo = tipo;
 		this.quantidade = quantidade;
+	}
+	
+	@Override
+	public String toString() {
+		String dados = String.format("[tipo], %s (%d): %.2f ", 
+				produto,
+				quantidade,
+				preco
+				);
+		
+			if (nivelEstoque()) {
+				dados = "!ESTOQUE BAIXO " + dados;				 
+		}
+			return dados;
+	}
+	
+	public double getPrecoMinimo() {
+		return preco;
 	}
 	
 	public boolean nivelEstoque() {
 		if (this.quantidade <= 5) {
 			return true;
 		}
-		return false;
+		return false; 
 	}
 	
-	public String tipoProduto() {
-		return this.tipo;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
-	
-	public Double precoProduto() {
-		return this.preco;
-	}
-	
-	public String produtoProduto() {
-		return this.produto;
-	}
-	
-	public int quantidadeProduto() {
-		return this.quantidade;
-	}
-	
 }
+
